@@ -1,0 +1,29 @@
+{
+    "name": "church/laravel-easy-sms",
+    "description": "overtrue/easy-sms wrapper",
+    "type": "library",
+    "require": {
+        "overtrue/easy-sms": "dev-master",
+        "illuminate/container": "^5.1 || ^6.0 || ^7.0 || ^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "church",
+            "email": "church_qi@aliyun.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Church\\LaravelSms\\": "./src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Church\\LaravelSms\\ServiceProvider"
+            ]
+        }
+    }
+}
